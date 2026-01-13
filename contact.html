@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — F1R3FLY</title>
+    <meta name="description" content="Get in touch with F1R3FLY. Contact our London or New York offices to learn how concurrent computing can transform your enterprise.">
+    <link rel="stylesheet" href="https://use.typekit.net/mhz8bvz.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 40px; }
+        .contact-form { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; font-family: 'brandon-grotesque', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 14px 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; font-family: 'source-sans-pro', sans-serif; font-size: 16px; transition: border-color 0.3s ease; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #80D5FF; }
+        .form-group textarea { min-height: 150px; resize: vertical; }
+        .form-group select { cursor: pointer; }
+        .form-group select option { background: #000; }
+        .contact-info { display: flex; flex-direction: column; gap: 40px; }
+        .office-card { background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.15); border-radius: 12px; padding: 30px; }
+        .office-card h3 { font-size: 1.25rem; margin-bottom: 20px; font-weight: 500; color: #fff; }
+        .office-card p { color: rgba(255,255,255,0.7); margin-bottom: 8px; font-size: 16px; }
+        .office-card a { color: #80D5FF; text-decoration: none; transition: color 0.3s ease; }
+        .office-card a:hover { color: #FFE867; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/Logo Icon.svg" alt="F1R3FLY" class="nav-logo-icon">
+                <span class="nav-logo-text">F1R3FLY</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="consensus-chain-security.html">Consensus Chain Security</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="increase-throughput.html">Increase Throughput</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="code-validation.html">Code Validation</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="secure-data-sharing.html">Secure Data Sharing</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="mork.html">Mork</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="nav-cta active">Get In Touch</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+        </div>
+        <div class="nav-line"></div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <a href="consensus-chain-security.html">Consensus Chain Security</a>
+            <a href="increase-throughput.html">Increase Throughput</a>
+            <a href="code-validation.html">Code Validation</a>
+            <a href="secure-data-sharing.html">Secure Data Sharing</a>
+            <a href="mork.html">Mork</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Get In Touch</a>
+        </div>
+    </div>
+
+    <section class="page-hero" style="background-image: url('images/pawel-czerwinski-sxiTiyeQF-E-unsplash copy.jpg');">
+        <div class="page-hero-content">
+            <span class="label">Let's Connect</span>
+            <h1>Get In Touch</h1>
+            <p>Ready to transform your enterprise with concurrent computing? Our team is here to help you understand how F1R3FLY can address your specific challenges.</p>
+        </div>
+    </section>
+
+    <div class="page-content-wrap bg-magenta">
+        <div class="page-content">
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h2 style="margin-bottom: 30px;">Send Us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="security">Consensus Chain Security</option>
+                            <option value="throughput">Increase Throughput</option>
+                            <option value="code">Code Validation</option>
+                            <option value="data">Secure Data Sharing</option>
+                            <option value="mork">Mork - Intelligent Search</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="gradient-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="office-card">
+                    <span class="label">Europe</span>
+                    <h3>London Office</h3>
+                    <p>4-5 Langham Place</p>
+                    <p>London, W1B 3DG</p>
+                    <p>United Kingdom</p>
+                    <p style="margin-top: 15px;"><strong>Phone:</strong> +44 (0)203 432 0078</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@f1r3fly.com">info@f1r3fly.com</a></p>
+                </div>
+                <div class="office-card">
+                    <span class="label">United States</span>
+                    <h3>New York Office</h3>
+                    <p>Floor 17, 521 Fifth Avenue</p>
+                    <p>New York, NY 10175</p>
+                    <p>United States</p>
+                    <p style="margin-top: 15px;"><strong>Phone:</strong> +1 646 475 9644</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@f1r3fly.com">info@f1r3fly.com</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="site-switcher">
+        <p>Looking for developer documentation and technical resources?</p>
+        <a href="https://f1r3fly.io">Visit F1R3FLY.IO for Developers →</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg height="40" viewBox="0 0 152 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M99.487 49.857C99.5008 50.2565 99.429 50.6559 99.2745 51.0168C98.7559 52.2482 97.4343 52.9176 96.1294 52.609C92.5207 51.7413 88.6692 51.1958 84.3542 50.9452C81.485 50.7881 78.4419 50.7413 75.3188 50.8074C66.0846 50.8956 54.602 53.1517 42.9786 57.1571C37.0634 59.2232 31.8132 61.8154 27.3824 64.8567C19.5967 70.2588 9.71143 79.3054 6.85318 91.688C6.17724 94.5613 6.18552 97.5199 6.8587 100.352C7.72224 103.966 9.44381 107.266 11.891 109.914C21.2686 119.872 27.7521 121.676 33.361 122.142C43.7704 122.847 56.158 120.809 59.5763 119.475C60.255 119.211 60.9972 119.227 61.6621 119.517C62.3352 119.82 62.8484 120.351 63.1105 121.026C63.5519 122.164 63.1795 123.459 62.2056 124.189C59.2811 126.53 54.7068 127.974 51.3768 128.773C47.277 129.762 42.6117 130.362 38.5809 130.423C37.629 130.428 37.4663 130.428 37.3035 130.423C27.5948 130.337 18.5952 127.398 11.96 122.153C4.29013 116.087 0.1545 107.459 0 97.2003C0 96.9524 0.00275893 96.7403 0.00827679 96.5392C0.0165536 96.2031 0.0193125 95.8643 0.00827679 95.5282C0.0496607 86.6386 2.95205 77.9418 8.39266 69.9117C14.8844 60.3774 24.72 52.6724 36.8455 47.6339C43.8449 44.7249 51.9837 43.028 61.0385 42.5845C64.5617 42.4109 68.358 42.4274 72.3253 42.6285C76.083 42.7856 80.5552 43.0473 85.1185 43.7883C89.8997 44.5458 94.0519 45.6753 97.8123 47.2372C98.8717 47.6753 99.5339 48.7221 99.487 49.8598V49.857Z" fill="url(#f_grad1)"/>
+                        <path d="M108.954 81.1959C107.4 84.4238 105.658 87.5548 103.776 90.5028C102.974 91.7608 101.141 92.2096 99.6921 92.2096C98.835 92.2096 98.0111 92.06 97.3033 91.7801C96.0702 91.2925 95.274 90.054 95.274 88.627C95.274 88.0507 95.4233 87.4744 95.6997 86.9646C97.6683 83.3737 99.5013 79.4725 101.155 75.3552C104.782 66.0178 106.471 56.3451 106.037 47.3956C105.802 43.1148 105.147 38.8174 104.096 34.6308C100.975 21.8161 93.8086 11.6779 84.9254 7.50516C84.8286 7.46083 81.5496 5.77622 77.7701 5.00041C76.819 4.80369 73.3409 4.26062 68.4832 5.47698C68.3754 5.50468 68.0574 5.62383 67.8473 5.70418C66.5589 6.19737 65.7157 6.52155 64.8005 6.02835C64.2973 5.75959 63.9352 5.28302 63.8107 4.72888L63.6974 4.22183L63.8522 3.72587C64.195 2.65913 65.0079 2.33218 65.312 2.2075C65.3341 2.19918 65.348 2.19364 65.3618 2.1881C66.5866 1.60347 67.9745 0.968974 69.1882 0.758397C75.3565 -0.701786 81.8261 -0.045119 87.9058 2.65636C102.41 8.87668 110.787 23.8775 113.787 35.8388C114.771 39.7289 115.44 43.9765 115.769 48.4568C116.397 59.645 114.041 70.9608 108.957 81.1959H108.954Z" fill="url(#f_grad2)"/>
+                        <path d="M148.286 111.947C144.165 121.513 135.074 128.9 123.34 132.216C118.913 133.446 114.237 134.068 109.434 134.068C104.632 134.068 99.7712 133.449 94.952 132.227C85.9351 129.939 77.1612 125.604 69.5803 119.683L65.6946 116.296C63.1787 113.894 60.8589 111.308 58.7241 108.551C55.0731 103.805 51.853 98.4288 49.152 92.5695C47.4564 88.854 45.5563 84.4553 44.3384 79.9733C43.0874 75.6136 42.2561 71.1538 41.8695 66.7329C41.8556 66.5386 41.8556 66.2914 41.8639 65.8055C41.8722 65.4139 41.8833 64.7863 41.8695 64.6086C41.8004 63.77 42.0573 62.9674 42.5903 62.3454C43.1122 61.7289 43.8524 61.3485 44.6643 61.2846C46.1363 61.143 47.484 62.1094 47.8541 63.5839C48.8869 67.7715 50.138 71.7481 51.5796 75.4053C59.6879 92.9583 66.9733 102.847 75.6505 109.859C84.4024 116.887 94.6041 121.483 105.148 123.152C110.694 124.082 115.48 124.168 119.788 123.421C125.825 122.399 131.141 119.9 135.171 116.193C139.482 112.189 142.091 106.19 142.334 99.7395C142.365 98.9786 142.362 98.2122 142.323 97.4513C142.155 93.9913 141.757 90.9117 141.105 88.0376C140.716 86.3603 140.954 84.9663 141.677 83.8444C142.395 82.7197 143.511 81.9561 144.814 81.6923C147.446 81.1591 149.971 82.7669 150.6 85.3495C151.39 88.5652 151.741 91.8725 151.644 95.1826C151.813 100.881 150.68 106.524 148.278 111.95L148.286 111.947Z" fill="#F4D833"/>
+                        <defs>
+                            <linearGradient id="f_grad1" x1="0" y1="86.443" x2="99.4897" y2="86.443" gradientUnits="userSpaceOnUse"><stop stop-color="#5DB8E8"/><stop offset="1" stop-color="#D7DF23"/></linearGradient>
+                            <linearGradient id="f_grad2" x1="63.6974" y1="46.1044" x2="115.866" y2="46.1044" gradientUnits="userSpaceOnUse"><stop stop-color="#F4D731"/><stop offset="1" stop-color="#5DB8E8"/></linearGradient>
+                        </defs>
+                    </svg>
+                    <span>F1R3FLY</span>
+                </div>
+                <p class="footer-tagline">Scalable. Searchable. Secure. Storable.<br>A Digital Evolution in concurrent computing.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Solutions</h4>
+                <a href="consensus-chain-security.html">Consensus Chain Security</a>
+                <a href="increase-throughput.html">Increase Throughput</a>
+                <a href="code-validation.html">Code Validation</a>
+                <a href="secure-data-sharing.html">Secure Data Sharing</a>
+                <a href="mork.html">Mork</a>
+            </div>
+            <div class="footer-column">
+                <h4>Europe Office</h4>
+                <p>4-5 Langham Place</p>
+                <p>London, W1B 3DG</p>
+                <p>+44 (0)203 432 0078</p>
+                <a href="mailto:info@f1r3fly.com">info@f1r3fly.com</a>
+            </div>
+            <div class="footer-column">
+                <h4>US Office</h4>
+                <p>Floor 17, 521 Fifth Avenue</p>
+                <p>New York, NY 10175</p>
+                <p>+1 646 475 9644</p>
+                <a href="mailto:info@f1r3fly.com">info@f1r3fly.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">©2025 F1R3FLY. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="https://f1r3fly.io">F1R3FLY.IO (Developers)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.getElementById('mobileMenuOverlay').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('mobileMenuOverlay').classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+</body>
+</html>
